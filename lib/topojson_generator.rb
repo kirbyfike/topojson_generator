@@ -1,8 +1,8 @@
 module TopojsonGenerator
-  state_key = :state_code 
+  attr_accessor :state_code
 
   def topojson_with_state_key(state_key = :state_code)
-    puts state_key
+    @state_code = state_key
   end
 
   def topojson_generator(model_object)
@@ -17,6 +17,7 @@ end
 ## Example
 module Delinquency
   class DeliquenciesController < ApplicationController
+    extend TopojsonGenerator
     topojson_with_state_key :state_code
 
     def index
