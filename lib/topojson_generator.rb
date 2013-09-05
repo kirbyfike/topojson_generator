@@ -10,10 +10,6 @@ module TopojsonGenerator
   end
 end
 
-puts TopojsonGenerator.topojson_with_state_key :abbr_with_state
-
-
-
 
 
 
