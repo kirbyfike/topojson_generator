@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "A simple gem for inserting rails model data into a topo json file."
   s.authors     = ["Kirby Fike"]
   s.email       = 'kirbyfike@gmail.com'
-  s.files       = ["lib/topojson_generator.rb"]
+  s.files       = ["lib/*", "config/*"]
   s.homepage    = 'http://rubygems.org/gems/topojson_generator'
   s.license       = 'MIT'
 end
